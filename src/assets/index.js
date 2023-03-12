@@ -21,11 +21,15 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import linux from "./tech/linux.png";
+import kubernetes from "./tech/k8s.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import cloudtel from "./company/cloudtel.png";
+import tekion from "./company/tekion.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -53,10 +57,14 @@ export {
   tailwind,
   typescript,
   threejs,
+  linux,
+  kubernetes,
   meta,
   shopify,
   starbucks,
   tesla,
+  cloudtel,
+  tekion,
   carrent,
   jobit,
   tripguide,

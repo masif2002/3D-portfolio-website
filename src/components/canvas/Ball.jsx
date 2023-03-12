@@ -22,7 +22,7 @@ const Ball = (icon) => {
         />
         <Decal 
           position={[0, 0, 1]}
-          rotation={[ 2 * Math.PI, 0, 6.25]}
+          rotation={[ 2 * Math.PI, 0, 6.25]} // flip horizontally
           flatShading
           map={decal}
         />

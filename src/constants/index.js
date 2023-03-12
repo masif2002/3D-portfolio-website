@@ -23,7 +23,13 @@ import {
   jobit,
   tripguide,
   threejs,
+  cloudtel,
+  tekion,
+  linux,
+  kubernetes
 } from "../assets";
+
+export const about = "I'm a passionate individual learning and working with new technologies. I love solving real-world problems and learning along the way. I have currently explored the field of Devops, Cloud Computing, Frontend and Backend tools and technologies"
 
 export const navLinks = [
   {
@@ -42,19 +48,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "DevOps",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Cloud Computing",
     icon: creator,
   },
 ];
@@ -73,100 +79,59 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
   },
   {
     name: "docker",
     icon: docker,
   },
+  {
+    name: "kubernetes",
+    icon: kubernetes,
+  },
+  {
+    name: "linux",
+    icon: linux,
+  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Frontend Developer Intern",
+    company_name: "Tekion",
+    icon: tekion,
+    iconBg: "#00bfa4",
+    date: "Dec 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built a strong foundation on the fundamentals of HTML, CSS & JavaScript",
+      "Improved on efficient methods of developing a web application",
+      "Insights on industry Standards for web development"
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Software Developer Intern",
+    company_name: "CloudTel Solutions",
+    icon: cloudtel,
+    iconBg: "#FFF",
+    date: "July 2022 - August 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked with AWS Services such as Amazon EC2, S3, VPC, IAM, ECR ...",
+      "Interacted with AWS Services using the AWS CLI and the Python SDK (Boto3)",
+      "Created shell Scripts to bootstrap a server and then create an AMI",
+      "Adopted exclusively to Linux OS (Ubuntu) for day-to-day tasks",
+      "Deployed application on containers to production",
+      "Configured webservers to serve static files and installed SSL certificates for the domain"
     ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  }
 ];
 
 const testimonials = [

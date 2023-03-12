@@ -2,17 +2,18 @@ import React from 'react'
 import Tilt from 'react-tilt'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
+import { about } from '../constants'
 
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
-
 import { SectionWrapper } from '../hoc'
+
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75, )}
         className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
       >
         <div 
@@ -46,7 +47,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nostrum laborum dicta maxime eligendi rerum neque voluptatum autem aliquam veritatis numquam eos dolores adipisci doloribus explicabo placeat ea, fugiat itaque.
+        {about}
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
