@@ -1,6 +1,6 @@
 import React, {useState, useRef} from 'react'
 import { motion } from 'framer-motion'
-// import { emailjs } from '@emailjs/browser'
+import emailjs  from '@emailjs/browser'
 
 import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
@@ -16,9 +16,53 @@ const Contact = () => {
   })
   const [loading, setLoading] = useState(false)
 
-  const handleChange = (e) => {}
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    
+    setForm({ ...form, [name]: value })
 
-  const handleSubmit = (e) => {}
+  }
+
+  const handleSubmit = (e) => {
+    // service_nhq6kus
+    // template_jb8oylu
+    // kqnoczsL0DVGRYiCD
+
+    e.preventDefault()
+
+    setLoading(true)
+
+    emailjs.send(
+      'service_nhq6kus',
+      'template_jb8oylu',
+      {
+        from_name: form.name,
+        from_email: form.email,
+        to_name: 'Mohamed Asif',
+        to_email: 'asifthelazycoder@gmail.com',
+        message: form.message
+      },
+      'kqnoczsL0DVGRYiCD',
+    ).then(() => {
+
+      setLoading(false)
+      alert("Your message has been sent!")
+
+      setForm({
+        name: '',
+        email: '',
+        message: ''
+      })
+
+    }, (e) => {
+
+      setLoading(false)
+      alert("Something went wrong!")
+
+    })
+
+
+  }
 
   return (
     <div className='xl:mt-12 xl:flex-row flex flex-col-reverse gap-10 overflow-hidden'>
@@ -52,7 +96,7 @@ const Contact = () => {
 
           <label className='flex flex-col'>
             <span className="text-white font-medium mb-4">Your Message</span>
-            <textarea type="text" name='name' value={form.message}
+            <textarea type="text" name='message' value={form.message}
             rows="7"
             onChange={handleChange}
             placeholder="What's your message?"
