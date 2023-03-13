@@ -9,7 +9,6 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
-import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
@@ -19,10 +18,38 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
+import bootstrap from "./tech/bootstrap.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+
+import docker from "./tech/docker.png";
 import linux from "./tech/linux.png";
 import kubernetes from "./tech/k8s.png";
+import nginx from "./tech/nginx.webp";
+import apache from "./tech/apache.png";
+import githubactions from "./tech/githubactions.png";
+import jenkins from "./tech/jenkins.png";
+
+import mysql from "./tech/mysql.png";
+import postgresql from "./tech/postgresql.png";
+import sqlite from "./tech/sqlite.png";
+import firebase from "./tech/firebase.png";
+
+import flask from "./tech/flask.png";
+import fastapi from "./tech/fastapi.png";
+import django from "./tech/django.png";
+import postman from "./tech/postman.png";
+
+import python from "./tech/python.png";
+import c from "./tech/c.png";
+import cpp from "./tech/cpp.png";
+import bash from "./tech/bash.png";
+
+import aws from "./tech/aws.png";
+import gcp from "./tech/gcp.webp";
+import heroku from "./tech/heroku.png";
+
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -68,5 +95,25 @@ export {
   carrent,
   jobit,
   tripguide,
-  pic
+  pic,
+  nginx,
+  apache,
+  githubactions,
+  jenkins,
+  bootstrap,
+  mysql,
+  postgresql,
+  sqlite,
+  firebase,
+  flask,
+  fastapi,
+  django,
+  postman,
+  python,
+  c,
+  cpp,
+  bash,
+  aws,
+  gcp,
+  heroku,
 };

@@ -26,7 +26,29 @@ import {
   cloudtel,
   tekion,
   linux,
-  kubernetes
+  kubernetes,
+  nginx,
+  apache,
+  githubactions,
+  jenkins,
+  bootstrap,
+  mysql,
+  postgresql,
+  sqlite,
+  firebase,
+  flask,
+  fastapi,
+  django,
+  postman,
+  python,
+  c,
+  cpp,
+  bash,
+  aws,
+  gcp,
+  heroku,
+
+
 } from "../assets";
 
 export const about = "I'm a passionate individual learning and working with new technologies. I love solving real-world problems and learning along the way. I have currently explored the field of Devops, Cloud Computing, Frontend and Backend tools and technologies"
@@ -102,6 +124,86 @@ const technologies = [
     name: "linux",
     icon: linux,
   },
+  {
+    name: "bootstrap",
+    icon: bootstrap,
+  },
+  {
+    name: "nginx",
+    icon: nginx,
+  },
+  {
+    name: "apache",
+    icon: apache,
+  },
+  {
+    name: "githubactions",
+    icon: githubactions,
+  },
+  // {
+  //   name: "jenkins",
+  //   icon: jenkins,
+  // },
+  // {
+  //   name: "mysql", q
+  //   icon: mysql,
+  // },
+  // {
+  //   name: "postgresql",
+  //   icon: postgresql,
+  // },
+  // {
+  //   name: "sqlite",
+  //   icon: sqlite,
+  // },
+  // {
+  //   name: "firebase",
+  //   icon: firebase,
+  // },
+  {
+    name: "flask",
+    icon: flask,
+  },
+  // {
+  //   name: "fastapi",
+  //   icon: fastapi,
+  // },
+  // {
+  //   name: "django",
+  //   icon: django,
+  // },
+  // {
+  //   name: "postman",
+  //   icon: postman,
+  // },
+  // {
+  //   name: "python",
+  //   icon: python,
+  // },
+  // {
+  //   name: "c",
+  //   icon: c,
+  // },
+  // {
+  //   name: "cpp",
+  //   icon: cpp,
+  // },
+  // {
+  //   name: "bash",
+  //   icon: bash,
+  // },
+  // {
+  //   name: "aws",
+  //   icon: aws,
+  // },
+  // {
+  //   name: "gcp",
+  //   icon: gcp,
+  // },
+  // {
+  //   name: "heroku",
+  //   icon: heroku,
+  // },
 ];
 
 const experiences = [
