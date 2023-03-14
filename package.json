@@ -12,6 +12,8 @@
     "@emailjs/browser": "^3.10.0",
     "@react-three/drei": "^9.57.0",
     "@react-three/fiber": "^8.11.9",
+    "dotenv": "^16.0.3",
+    "firebase": "^9.17.2",
     "framer-motion": "^10.1.0",
     "install": "^0.13.0",
     "maath": "^0.5.2",

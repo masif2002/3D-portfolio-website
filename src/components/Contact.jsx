@@ -18,16 +18,14 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target
+    console.log(process.env.SECRET)
+
     
     setForm({ ...form, [name]: value })
 
   }
 
   const handleSubmit = (e) => {
-    // service_nhq6kus
-    // template_jb8oylu
-    // kqnoczsL0DVGRYiCD
-
     e.preventDefault()
 
     setLoading(true)

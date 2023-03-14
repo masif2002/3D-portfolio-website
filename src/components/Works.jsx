@@ -22,38 +22,43 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
       
       <div className="relative w-full h-[230px]">
         <img src={image} alt={name}
-          className="w-full h-full object-cover rounded-2xl"
+          className="w-full h-full object-fit rounded-2xl"
         />
 
         <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+        <a href={source_code_link} target='blank'>
           <div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
             <img src={github} alt="github"
               className='w-1/2 h-1/2 object-contain'
             />
           </div>
+        </a>
         </div>
         
       </div>
 
-      
-      <div className="mt-5">
-      <h3 className="text-white font-bold text-[24px]">
-      {name}
-      </h3>
-      
-      <p className="mt-2 text-secondary text-[14px]">
-      {description}
-      </p>
-      </div>
-      
-      <div className="mt-4 flex flex-wrap gap-2">
-        {tags.map((tag) => (
-          <p key={tag.name} className={`text-[14px] ${tag.color}`}>
-            #{tag.name}
+      <div className="flex flex-col justify-between ">
+        <div>
+          <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">
+          {name}
+          </h3>
+          
+          <p className="mt-2 text-secondary text-[14px]">
+          {description}
           </p>
-        ))}
+          </div>
+        </div>
+        
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+        
       </div>
-      
     </Tilt>
 
     </motion.div>
@@ -72,17 +77,9 @@ const Works = () => {
         </h2>
       </motion.div>
 
-      <div className="w-full flex">
-        <motion.p 
-          variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
-        >
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum officiis minima quae dolorum saepe accusantium rem iusto nobis? Natus itaque similique eum architecto deleniti dolores, vitae provident ut. Vitae, necessitatibus?
-        </motion.p>
+     
 
-      </div>
-
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-10 flex flex-wrap gap-7">
         {projects.map((project, index) => (
           <ProjectCard 
             key={`project-${index}`}
@@ -91,6 +88,16 @@ const Works = () => {
           />
         ))}  
       </div>
+
+        <motion.div className=' flex justify-center w-full mt-20 cursor-pointer' variants={fadeIn('', '', 1.5)}>
+          <a href="http://github.com/masif2002" target='blank' >
+            <div className='green-pink-gradient p-[1px] rounded-xl'>
+              <div className="bg-tertiary px-8 py-4 rounded-xl text-[22px] delay-75  tracking-wider uppercase hover:bg-white hover:text-tertiary">
+                More Projects ...
+              </div>
+            </div>
+          </a>
+        </motion.div>
     </>
   )
 }

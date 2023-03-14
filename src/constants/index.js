@@ -9,7 +9,7 @@ import {
   css,
   reactjs,
   redux,
-  tailwind,
+  tailwind, 
   nodejs,
   mongodb,
   git,
@@ -47,7 +47,13 @@ import {
   aws,
   gcp,
   heroku,
-
+  votify,
+  buyNsell,
+  admindashboard,
+  hackerrank,
+  awsccp,
+  gcpdg,
+  pythoncert
 
 } from "../assets";
 
@@ -88,78 +94,78 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
+  // {
+  //   name: "HTML 5",
+  //   icon: html,
+  // },
+  // {
+  //   name: "CSS 3",
+  //   icon: css,
+  // },
+  // {
+  //   name: "JavaScript",
+  //   icon: javascript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
+  // {
+    //   name: "Tailwind CSS",
+    //   icon: tailwind,
+  // },
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
-  {
-    name: "kubernetes",
-    icon: kubernetes,
   },
   {
     name: "linux",
     icon: linux,
   },
   {
-    name: "bootstrap",
-    icon: bootstrap,
+    name: "docker",
+    icon: docker,
   },
+  // {
+  //   name: "kubernetes",
+  //   icon: kubernetes,
+  // },
+  // {
+  //   name: "bootstrap",
+  //   icon: bootstrap,
+  // },
   {
     name: "nginx",
     icon: nginx,
   },
-  {
-    name: "apache",
-    icon: apache,
-  },
-  {
-    name: "githubactions",
-    icon: githubactions,
-  },
   // {
-  //   name: "jenkins",
-  //   icon: jenkins,
+  //   name: "apache",
+  //   icon: apache,
   // },
   // {
-  //   name: "mysql", q
+  //   name: "githubactions",
+  //   icon: githubactions,
+  // },
+  // {
+    //   name: "jenkins",
+    //   icon: jenkins,
+    // },
+  // {
+  //   name: "mysql",
   //   icon: mysql,
   // },
   // {
-  //   name: "postgresql",
-  //   icon: postgresql,
-  // },
-  // {
-  //   name: "sqlite",
+    //   name: "sqlite",
   //   icon: sqlite,
   // },
-  // {
-  //   name: "firebase",
-  //   icon: firebase,
-  // },
+  {
+    name: "firebase",
+    icon: firebase,
+  },
+  {
+    name: "python",
+    icon: python,
+  },
   {
     name: "flask",
     icon: flask,
@@ -168,18 +174,18 @@ const technologies = [
   //   name: "fastapi",
   //   icon: fastapi,
   // },
+  {
+    name: "django",
+    icon: django,
+  },
+  {
+    name: "postgresql",
+    icon: postgresql,
+  },
   // {
-  //   name: "django",
-  //   icon: django,
-  // },
-  // {
-  //   name: "postman",
-  //   icon: postman,
-  // },
-  // {
-  //   name: "python",
-  //   icon: python,
-  // },
+    //   name: "postman",
+    //   icon: postman,
+    // },
   // {
   //   name: "c",
   //   icon: c,
@@ -188,18 +194,18 @@ const technologies = [
   //   name: "cpp",
   //   icon: cpp,
   // },
-  // {
-  //   name: "bash",
-  //   icon: bash,
-  // },
-  // {
-  //   name: "aws",
-  //   icon: aws,
-  // },
-  // {
-  //   name: "gcp",
-  //   icon: gcp,
-  // },
+  {
+    name: "bash",
+    icon: bash,
+  },
+  {
+    name: "aws",
+    icon: aws,
+  },
+  {
+    name: "gcp",
+    icon: gcp,
+  },
   // {
   //   name: "heroku",
   //   icon: heroku,
@@ -239,42 +245,39 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "AWS Certified Cloud Practitioner",
+    image: awsccp,
+    icon: aws,
+    link: 'https://www.credly.com/badges/57074209-7830-4367-9921-62928eb57aeb/public_url'
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Google Cloud Digital Leader",
+    image: gcpdg,
+    icon: gcp,
+    link: 'https://www.credential.net/b6adac8a-184c-4743-88ca-c5537628fcec?key=005f755bbbbabc1448a3463fd43634cc20af978e8e53952d2f17cf1ba9237d47&record_view=true'
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Python Basics",
+    image: pythoncert,
+    icon: hackerrank,
+    link: 'https://www.hackerrank.com/certificates/635cc0313ed6'
   },
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Buy N Sell",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An e-commerce website that allows users to buy and sell used products. This application was hosted on AWS with the help of containers ",
     tags: [
       {
-        name: "react",
+        name: "devops",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "djangod",
         color: "green-text-gradient",
       },
       {
@@ -282,50 +285,50 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: buyNsell,
+    source_code_link: "https://github.com/masif2002/buyNsell-django-app",
   },
   {
-    name: "Job IT",
+    name: "Admin Dashboard",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A dashboard application for an organization that allows to view the list of employees and their details",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
       },
       {
         name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: admindashboard,
+    source_code_link: "https://github.com/masif2002/admin-dashboard",
+  },
+  {
+    name: "Votify",
+    description:
+      "A simple social media application that allows users to vote for photos posted by other users on the platform",
+    tags: [
+      {
+        name: "fastapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "heroku",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: votify,
+    source_code_link: "https://github.com/masif2002/fastapi",  
   },
 ];
 

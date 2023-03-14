@@ -7,6 +7,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import link from './link.svg'
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -45,7 +46,7 @@ import c from "./tech/c.png";
 import cpp from "./tech/cpp.png";
 import bash from "./tech/bash.png";
 
-import aws from "./tech/aws.png";
+import aws from "./aws.jpg";
 import gcp from "./tech/gcp.webp";
 import heroku from "./tech/heroku.png";
 
@@ -61,6 +62,15 @@ import tekion from "./company/tekion.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import admindashboard from './admin-dashboard.png';
+import buyNsell from './buyNsell.png'
+import votify from './votify.png'
+
+import hackerrank from './hackerrank.jpeg'
+
+import awsccp from './cert/aws-ccp.png'
+import gcpdg from './cert//GCP-Cert.png'
+import pythoncert from './cert/python-basic.png'
 
 export {
   logo,
@@ -116,4 +126,12 @@ export {
   aws,
   gcp,
   heroku,
+  votify,
+  buyNsell,
+  admindashboard,
+  hackerrank,
+  awsccp,
+  gcpdg,
+  pythoncert,
+  link
 };
