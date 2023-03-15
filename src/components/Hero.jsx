@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import { linkedin, githubs } from '../assets'
 
 const Hero = () => {
 
@@ -23,6 +24,15 @@ const Hero = () => {
         </div>
         
       </div>
+
+      <div className="absolute bottom-48 justify-center w-full sm:hidden flex gap-8">
+          <a href="https://www.linkedin.com/in/masif2002/">
+            <img src={linkedin} alt="linkedin" className='h-10 w-10'/>
+          </a>
+          <a href="https://github.com/masif2002">
+            <img src={githubs} alt="linkedin" className='h-10 w-10'/>
+          </a>
+        </div>
       
       <ComputersCanvas />
 

@@ -5,9 +5,11 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
+import githubs from "./github.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import link from './link.svg'
+import linkedin from './linkedin.svg'
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -133,5 +135,7 @@ export {
   awsccp,
   gcpdg,
   pythoncert,
-  link
+  link,
+  linkedin,
+  githubs
 };

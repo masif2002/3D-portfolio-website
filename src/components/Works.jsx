@@ -90,7 +90,7 @@ const Works = () => {
       </div>
 
         <motion.div className=' flex justify-center w-full mt-20 cursor-pointer' variants={fadeIn('', '', 1.5)}>
-          <a href="http://github.com/masif2002" target='blank' >
+          <a href="https://github.com/masif2002?tab=repositories" target='blank' >
             <div className='green-pink-gradient p-[1px] rounded-xl'>
               <div className="bg-tertiary px-8 py-4 rounded-xl text-[22px] delay-75  tracking-wider uppercase hover:bg-white hover:text-tertiary">
                 More Projects ...

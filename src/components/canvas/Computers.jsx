@@ -58,7 +58,7 @@ const ComputersCanvas = () => {
   }, [])
 
 
-  return ( isMobile ? null : 
+  return ( isMobile ? null :
     <Canvas
       frameloop='demand'
       shadows
