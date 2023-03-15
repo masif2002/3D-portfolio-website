@@ -1,23 +1,26 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import { link } from '../assets'
-import { testimonials } from '../constants'
+import { certifications } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
 
 
-const Card = ({ index, testimonial, image, icon, link}) => {
+const Card = ({ index, name, image, icon, url}) => {
   return(
     <motion.div variants={fadeIn("", "spring", index * 0.5, 0.75)} 
     className="bg-black-200 p-7 rounded-3xl xs:w-[350px] w-full" >
-    <img src={image}  className='rounded-3xl object-contain' alt='Certificate'/>
+    <img src={image}  className=' object-contain' alt='Certificate'/>
     
     <div className="mt-7 flex justify-between items-center gap-1">
 
-      <a className='hover:underline hover:underline-offset-1 cursor-pointer' href={link} target='blank'>
+      <a className='hover:underline hover:underline-offset-1 cursor-pointer' href={url} target='blank'>
         <p className="text-white font-bold text-[18px] ">
-          {testimonial} 
+          {name} 
+          <span>
+            <img src={link} alt="" className='h-3 w-3 ml-3' />
+          </span>
         </p>
       </a>
 
@@ -41,11 +44,11 @@ const Certifications = () => {
       </div>
 
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap lg:flex-nowrap gap-7 justify-center`}>
-        {testimonials.map((testimonial, index) => (
+        {certifications.map((certification, index) => (
           <Card 
-            key={testimonial.name}
+            key={certification.name}
             index={index}
-            {...testimonial}
+            {...certification}
           />
         ))}
 

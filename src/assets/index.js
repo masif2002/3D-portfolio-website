@@ -49,6 +49,7 @@ import cpp from "./tech/cpp.png";
 import bash from "./tech/bash.png";
 
 import aws from "./aws.jpg";
+import awsball from "./tech/awsball.png";
 import gcp from "./tech/gcp.webp";
 import heroku from "./tech/heroku.png";
 
@@ -137,5 +138,6 @@ export {
   pythoncert,
   link,
   linkedin,
-  githubs
+  githubs,
+  awsball
 };

@@ -53,7 +53,8 @@ import {
   hackerrank,
   awsccp,
   gcpdg,
-  pythoncert
+  pythoncert,
+  awsball
 
 } from "../assets";
 
@@ -200,7 +201,7 @@ const technologies = [
   },
   {
     name: "aws",
-    icon: aws,
+    icon: awsball,
   },
   {
     name: "gcp",
@@ -242,23 +243,23 @@ const experiences = [
   }
 ];
 
-const testimonials = [
+const certifications = [
   {
-    testimonial:
+    name:
       "AWS Certified Cloud Practitioner",
     image: awsccp,
     icon: aws,
     link: 'https://www.credly.com/badges/57074209-7830-4367-9921-62928eb57aeb/public_url'
   },
   {
-    testimonial:
+    name:
       "Google Cloud Digital Leader",
     image: gcpdg,
     icon: gcp,
     link: 'https://www.credential.net/b6adac8a-184c-4743-88ca-c5537628fcec?key=005f755bbbbabc1448a3463fd43634cc20af978e8e53952d2f17cf1ba9237d47&record_view=true'
   },
   {
-    testimonial:
+    name:
       "Python Basics",
     image: pythoncert,
     icon: hackerrank,
@@ -277,7 +278,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "djangod",
+        name: "django",
         color: "green-text-gradient",
       },
       {
@@ -332,4 +333,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, certifications, projects };
