@@ -17,6 +17,10 @@ span {
   display: inline-block;
 }
 
+textarea {
+  resize: none;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
