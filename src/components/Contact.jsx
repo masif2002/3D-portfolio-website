@@ -18,7 +18,6 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    console.log(process.env.SECRET)
 
     
     setForm({ ...form, [name]: value })
@@ -81,15 +80,15 @@ const Contact = () => {
             <input type="text" name='name' value={form.name}
             onChange={handleChange}
             placeholder="What's your name?"
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' required />
           </label>
 
           <label className='flex flex-col'>
             <span className="text-white font-medium mb-4">Your Email </span>
-            <input type="text" name='email' value={form.email}
+            <input type="email" name='email' value={form.email}
             onChange={handleChange}
             placeholder="What's your email?"
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' required />
           </label>
 
           <label className='flex flex-col'>
@@ -98,7 +97,7 @@ const Contact = () => {
             rows="7"
             onChange={handleChange}
             placeholder="What's your message?"
-            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' />
+            className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium' required />
           </label>
 
           <button
