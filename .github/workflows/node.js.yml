@@ -5,6 +5,14 @@ name: Test Workflow
 on:
   push:
     branches: [ "master" ]
+    
+env:
+  REMOTE_HOST: 15.207.85.142
+  REMOTE_USER: ec2-user
+  
+permissions:
+  contents: read
+  id-token: write
 
 jobs:
   build:
@@ -22,4 +30,23 @@ jobs:
         
     - run: npm ci --legacy-peer-deps
     - run: npm run build --if-present 
-    - run: ls
+    
+    - name: Configure SSH
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$SSH_KEY" > ~/.ssh/github-actions-key
+        chmod 600 ~/.ssh/github-actions-key
+        cat >>~/.ssh/config <<END
+        Host ec2
+          HostName $SSH_HOST
+          User $SSH_USER
+          IdentityFile ~/.ssh/github-actions-key
+          StrictHostKeyChecking no
+        END
+      env:
+        SSH_HOST: ${{ env.REMOTE_HOST }}
+        SSH_USER: ${{ env.REMOTE_USER }}
+        SSH_KEY: ${{ secrets.SSH_KEY }} 
+        
+    - name: Copy files to directory in EC2
+      run: scp -r * ec2:/var/www/portfolio.com 
