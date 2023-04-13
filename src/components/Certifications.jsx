@@ -11,7 +11,7 @@ const Card = ({ index, name, image, icon, url}) => {
   return(
     <motion.div variants={fadeIn("", "spring", index * 0.5, 0.75)} 
     className="bg-black-200 p-7 rounded-3xl xs:w-[350px] w-full" >
-    <img src={image}  className=' object-contain' alt='Certificate'/>
+    <img src={image}  className=' object-contain h-[230px]' alt='Certificate'/>
     
     <div className="mt-7 flex justify-between items-center gap-1">
 

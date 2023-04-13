@@ -54,7 +54,9 @@ import {
   awsccp,
   gcpdg,
   pythoncert,
-  awsball
+  awsball,
+  az900,
+  microsoft
 
 } from "../assets";
 
@@ -260,11 +262,18 @@ const certifications = [
   },
   {
     name:
-      "Python Basics",
-    image: pythoncert,
-    icon: hackerrank,
-    url: 'https://www.hackerrank.com/certificates/635cc0313ed6'
+    "Microsoft Azure Fundamentals",
+    image: az900,
+    icon: microsoft,
+    url: 'https://www.credly.com/badges/ad668692-9764-4853-903d-f046266c1c15/public_url'
   },
+  // {
+  //   name:
+  //     "Python Basics",
+  //   image: pythoncert,
+  //   icon: hackerrank,
+  //   url: 'https://www.hackerrank.com/certificates/635cc0313ed6'
+  // },
 ];
 
 const projects = [

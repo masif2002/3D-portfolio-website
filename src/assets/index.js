@@ -52,7 +52,7 @@ import aws from "./aws.jpg";
 import awsball from "./tech/awsball.png";
 import gcp from "./tech/gcp.webp";
 import heroku from "./tech/heroku.png";
-
+import microsoft from './micrsoft.webp'
 
 
 import meta from "./company/meta.png";
@@ -74,6 +74,8 @@ import hackerrank from './hackerrank.jpeg'
 import awsccp from './cert/aws-ccp.png'
 import gcpdg from './cert//GCP-Cert.png'
 import pythoncert from './cert/python-basic.png'
+import az900 from './cert/az900.png'
+
 
 export {
   logo,
@@ -139,5 +141,7 @@ export {
   link,
   linkedin,
   githubs,
-  awsball
+  awsball,
+  az900,
+  microsoft
 };
