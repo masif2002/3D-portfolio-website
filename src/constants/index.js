@@ -267,13 +267,13 @@ const certifications = [
     icon: microsoft,
     url: 'https://www.credly.com/badges/ad668692-9764-4853-903d-f046266c1c15/public_url'
   },
-  // {
-  //   name:
-  //     "Python Basics",
-  //   image: pythoncert,
-  //   icon: hackerrank,
-  //   url: 'https://www.hackerrank.com/certificates/635cc0313ed6'
-  // },
+  {
+    name:
+      "Python Basics",
+    image: pythoncert,
+    icon: hackerrank,
+    url: 'https://www.hackerrank.com/certificates/635cc0313ed6'
+  },
 ];
 
 const projects = [

@@ -1,16 +1,17 @@
 import { motion } from 'framer-motion'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { link } from '../assets'
 import { certifications } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { styles } from '../styles'
 import { fadeIn, textVariant } from '../utils/motion'
+import PageDots from './PageDots'
 
 
 const Card = ({ index, name, image, icon, url}) => {
   return(
     <motion.div variants={fadeIn("", "spring", index * 0.5, 0.75)} 
-    className="bg-black-200 p-7 rounded-3xl xs:w-[350px] w-full" >
+    className="bg-black-200 p-7 rounded-3xl xs:min-w-[350px] min-w-full" >
     <img src={image}  className=' object-contain h-[230px]' alt='Certificate'/>
     
     <div className="mt-7 flex justify-between items-center gap-1">
@@ -32,6 +33,27 @@ const Card = ({ index, name, image, icon, url}) => {
   )
 }
 const Certifications = () => {
+  const [currentPage, setCurrentPage] = useState(0)
+
+
+  useEffect(() => {
+   
+  }, [currentPage])
+  
+
+  // Calculate total number of pages to display
+  const paginatedCertifications = [...Array(Math.ceil(certifications.length / 3)).keys()].map((page) => {
+    const index = (page+1)*3
+
+    return {
+      id: page,
+      cert: certifications.slice(index-3, index)
+    }
+  })
+
+  console.log(paginatedCertifications);
+  
+
   return (
     <div className='mt-12 bg-black-100 rounded-[20px]'>
       <div className={`bg-tertiary rounded-2xl min-h-[300px] ${styles.padding}`}>
@@ -44,7 +66,7 @@ const Certifications = () => {
       </div>
 
       <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap lg:flex-nowrap gap-7 justify-center`}>
-        {certifications.map((certification, index) => (
+        {paginatedCertifications[currentPage].cert.map((certification, index) => (
           <Card 
             key={certification.name}
             index={index}
@@ -53,6 +75,16 @@ const Certifications = () => {
         ))}
 
       </div>
+
+      <div className='flex justify-center gap-2'>
+        {paginatedCertifications.map((page) => (
+          <PageDots key={page.id} onclick={() => {
+            console.log('helo');
+            setCurrentPage(page.id)
+          }} />
+        ))}
+      </div>
+
     </div>
   )
 }

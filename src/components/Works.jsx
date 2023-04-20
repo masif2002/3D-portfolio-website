@@ -93,7 +93,7 @@ const Works = () => {
           <a href="https://github.com/masif2002?tab=repositories" target='blank' className='hover:scale-110 duration-500' >
             <div className='green-pink-gradient p-[1px] rounded-xl'>
               <div className="bg-tertiary px-8 py-4 rounded-xl text-[22px] tracking-wider uppercase hover:bg-white hover:text-tertiary">
-                More Projects ...
+                More Projects
               </div>
             </div>
           </a>
