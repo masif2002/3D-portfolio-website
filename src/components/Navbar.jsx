@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import { logo, menu, close, pic, linkedin, githubs } from '../assets'
+import { menu, close, pic, linkedin, githubs, twitter } from '../assets'
 
 const Navbar = () => {
 
@@ -34,7 +34,10 @@ const Navbar = () => {
             <img src={linkedin} alt="linkedin" className='h-5 w-5'/>
           </a>
           <a href="https://github.com/masif2002">
-            <img src={githubs} alt="linkedin" className='h-5 w-5'/>
+            <img src={githubs} alt="github" className='h-5 w-5'/>
+          </a>
+          <a href="https://twitter.com/imasiftoo">
+            <img src={twitter} alt="twitter" className='h-5 w-5'/>
           </a>
         </div>
 
